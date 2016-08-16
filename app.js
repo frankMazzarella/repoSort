@@ -64,7 +64,7 @@ function sortThatShit(obj) {
 function writeToFile(obj) {
     fs.writeFile(__dirname + '/output.json', JSON.stringify(obj), function(err) {
         if (err) {
-            return console.log(err);
+            console.log(err);
         } else {
             console.log('The file has been created!');
         }
